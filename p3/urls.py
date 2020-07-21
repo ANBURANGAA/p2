@@ -18,6 +18,10 @@ from django.urls import path
 from p3 import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.index,name='index'),
-    path('home',views.home,name='home'),
+    path('index/',views.index,name="index"),
+    path('',views.home,name="home"),
+    path('second/',views.second,name="second"),
+    path('third/',views.third,name='third'),
+    path('fourth/',views.fourth,name="fourth"),
+    path('fifth/',views.fifth,name="fifth"),
 ]
